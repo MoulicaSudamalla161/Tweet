@@ -1,0 +1,13 @@
+package com.tweetapp.dao;
+
+import com.tweetapp.model.Login;
+
+public class LoginDaoSqlImpl {
+
+	public void loginUser(Login login) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+
+}

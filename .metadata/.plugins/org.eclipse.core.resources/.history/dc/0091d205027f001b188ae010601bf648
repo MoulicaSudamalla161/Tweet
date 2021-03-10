@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View Tweet</title>
+</head>
+<body>
+    <div class="header">
+		&nbsp; tweet 
+		<img src="images/logo.png" class="logo"></img>
+			<a href="ViewTweet.jsp" class="post-link"> Post</a> 
+ 			<a href="ViewAllTweets.jsp" class="view-link"> View All</a> 
+ 			 <button class="btn btn-primary btn-lock btn-lg " class="viewall-link2" name="submit" type="submit" onclick="Login.jsp" >Logout</button>
+ 				
+    </div>
+ <div id="ui1">
+  <form action="Post" class="form-group" method="post">
+   <div class = "container"  >
+	  
+	   <div class="row">
+	       <img src="images/social.png" class="imagealign" >
+	   </div> <br> <br> 
+	   <div class="row">
+	     <textarea id="post" name="post" rows="5" cols="54" ></textarea>
+	   </div>
+	   <br>
+	   <div id="postbutton" >
+	    <button class="btn btn-primary btn-lock btn-lg "  name="submit" type="submit"  >Post</button>
+	   </div>
+	 </div> 
+	 </form> 
+</div>
+</body>
+</html>

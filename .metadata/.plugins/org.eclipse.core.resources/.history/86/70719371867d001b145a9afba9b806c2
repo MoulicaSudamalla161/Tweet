@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Post Tweet</title>
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="header">
+		&nbsp; tweet &nbsp; 
+		<img src="images/logo.png" class="logo"></img>
+			<a href="ViewTweet.jsp" class="post-link"> View</a> 
+ 			<a href="ViewAllTweets.jsp" class="view-link"> View All</a> 
+ 			 <button class="btn btn-primary btn-lock btn-lg " class="viewall-link2" name="submit" type="submit" onclick="Login.jsp" >Logout</button>
+ 				
+    </div>
+ <div id="ui1">
+   <div class = "container"  >
+	   <div class="row">
+	   <div class="col-lg-3">
+	       <input type="text" name="email" class="form-control"  id="namespace" placeholder="Enter your User Name">
+	   </div>
+	   </div>
+	   <div class="row">
+	       <img src="social.png" class="imagealign" >
+	   </div> <br> <br> 
+	   <div class="row">
+	     <textarea id="post" name="post" rows="5" cols="54" ></textarea>
+	   </div>
+	   <br>
+	   <div id="postbutton" >
+	    <button class="btn btn-primary btn-lock btn-lg "  name="submit" type="submit" >Post</button>
+	   </div>
+	 </div>  
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View All Tweets</title>
+<link rel="stylesheet" type="text/css" href="Style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="header">
+		&nbsp; tweet 
+		<img src="images/logo.png" class="logo"></img>
+			<a href="Post.jsp" class="post-link"> Post</a> 
+ 			<a href="ViewAllTweets.jsp" class="view-link"> View All</a> 
+ 			 <button class="btn btn-primary btn-lock btn-lg " class="viewall-link2" name="submit" type="submit" onclick="Login.jsp" >Logout</button>
+ 				
+    </div>
+ <div id="ui1">
+  
+    <div class="body">
+		<p class="head-tag-option2"> Menu Items </p>
+		<table class="table-option1">
+			<tbody>
+				<tr>
+					<th class="td-left-align"><label for="Name"> User Name </label></th>
+					  
+					<th class="td-right-align"><label for="Price"> Tweet </label></th>
+					
+				</tr>
+				<%-- <c:forEach var="menuItem" items="${menuItemList}">
+					<tr>
+						<td class="td-left-align">${menuItem.name}</td>
+						<td class="td-right-align">Rs. <fmt:formatNumber pattern="0.00" value="${menuItem.price}" /></td>
+						<td class="td-center-align">${menuItem.active?'Yes':'No'}</td>
+						<td class="td-center-align-option1"><fmt:formatDate
+								pattern="dd/MM/yyyy" value="${menuItem.dateOfLaunch}" /></td>
+						<td class="td-center-align">${menuItem.category}</td>
+						<td class="td-center-align-option1">${menuItem.freeDelivery?'Yes':'No'}</td>
+						<td class="td-center-align"><a
+							href="ShowEditMenuItem?menuItemId=${menuItem.id}"
+							class="action-link">Edit</a></td>
+					</tr>
+				</c:forEach> --%>
+				
+			</tbody>
+		</table>
+	</div>
+</div>
+
+</body>
+</html>

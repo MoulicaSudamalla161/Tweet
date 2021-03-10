@@ -1,0 +1,5 @@
+package com.tweetapp.servlet;
+
+public class HelloServlet {
+
+}

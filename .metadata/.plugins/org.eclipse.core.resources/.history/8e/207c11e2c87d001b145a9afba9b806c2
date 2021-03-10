@@ -1,0 +1,33 @@
+package com.tweetapp.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.tweetapp.handler.ConnectionHandler;
+import com.tweetapp.model.PostTweet;
+
+public class PostDaoSqlImpl {
+
+	String INSERT_TWEET_SQL = "INSERT INTO tweet" +
+            "  (tweet_us_email, tweet_message) VALUES " +
+            " (?, ?);";
+	
+
+	public void postTweet(PostTweet tweet) {
+		// TODO Auto-generated method stub
+		try {
+			Connection connection =  ConnectionHandler.getConnection();
+			 PreparedStatement preparedStatement = connection.prepareStatement(INSERT_TWEET_SQL);
+//			 System.out.println(tweet.getUserName());
+			 preparedStatement.setString(1,tweet.getUserName() );
+			 preparedStatement.setString(2, tweet.getTweet());
+//			 System.out.println(tweet.getTweet());
+			 preparedStatement.executeUpdate();
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+	}
+
+}

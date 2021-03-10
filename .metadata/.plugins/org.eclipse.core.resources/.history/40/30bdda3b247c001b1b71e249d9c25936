@@ -1,0 +1,12 @@
+package com.tweetapp.exception;
+
+public class UserNotFoundException throws Exception {
+
+	String message;
+	public UserNotFoundException(String m) {
+		// TODO Auto-generated constructor stub
+		this.message=m;
+	}
+	 
+
+}

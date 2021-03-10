@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\User\Desktop\TweetApp\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2115100963.index
+694398854.index
+2176112945.index
+4078864687.index
+1686542291.index
+3799770440.index
+2546875129.index

@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+// Include truYum form validation functions here
+function validateForm(editMenu){
+	var name = editMenu.elements["title"].value.trim();
+	var testName = /^[A-Za-z ]{2,65}$/;
+	if(name == "" || name == null ){
+		alert("Title is required.");
+		return false ;
+	}
+	else if(!testName.test(name)){
+		alert("Title should have 2 to 65 characters.");
+		return false ;
+	}
+	var price = editMenu.elements["price"].value.trim();
+	if(price == "" || price == null || price == 0 ){
+		alert("Price is required.");
+		return false ;
+	}
+	else if(isNaN(price)){
+		alert("Price has to be a number");
+		return false ;
+	}
+	var dateOfLaunch = editMenu.elements["dateOfLaunch"].value.trim();
+	if(dateOfLaunch == "" || dateOfLaunch == null ){
+		alert("Date of Launch is required.");
+		return false ;
+	}
+	var category = editMenu.elements["category"].value.trim();
+	if(category == "" || category == null ){
+		alert("Select one category");
+		return false ;
+	}
+	return true ;	
+}

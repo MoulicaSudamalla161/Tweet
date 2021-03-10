@@ -1,0 +1,54 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View All Tweets</title>
+<link rel="stylesheet" type="text/css" href="Style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="header">
+		&nbsp; tweet 
+		<img src="images/logo.png" class="logo"></img>
+			<a href="Post.jsp" class="post-link"> Post</a> 
+ 			<a href="ViewAllTweets.jsp" class="view-link"> View All</a> 
+ 			 <button class="btn btn-primary btn-lock btn-lg " class="viewall-link2" name="submit" type="submit" onclick="Login.jsp" >Logout</button>
+ 				
+    </div>
+ <div id="ui1">
+  
+    <div class="body">
+		<p class="head-tag-option2"> ***Tweets*** </p>
+		<table class="table-option1">
+			<tbody>
+				<tr>
+				   <th class="td-left-align"><label for="uId"> TwetId </label></th>
+				
+					<th class="td-left-align"><label for="Name"> Tweet_UserId </label></th>
+					  
+					<th class="td-right-align"><label for="Price"> Tweet </label></th>
+					
+				</tr>
+				 <c:forEach var="tweet" items="${tweetsList}">
+					<tr>
+						<td class="td-left-align">${tweet.userId}</td>
+						<td class="td-left-align">${tweet.userName}</td>
+						<td class="td-left-align">${tweet.tweet}</td>
+						
+						
+					</tr>
+				</c:forEach> 
+				
+			</tbody>
+		</table>
+	</div>
+</div>
+
+</body>
+</html>

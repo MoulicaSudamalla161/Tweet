@@ -1,0 +1,12 @@
+package com.tweetapp.dao;
+
+import com.tweetapp.model.User;
+
+public class UserDaoImpl {
+
+	public void registerUser(User user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

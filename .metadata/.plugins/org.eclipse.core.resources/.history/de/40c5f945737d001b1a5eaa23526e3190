@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Post Tweet</title>
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="header">
+		&nbsp; tweet &nbsp; 
+		<img src="images/logo.png" class="logo"></img>
+		 
+			<a href="ViewTweet.jsp" class="view-link"> View</a> 
+			<a href="ViewAllTweets.jsp" class="viewall-link"> View All</a> 
+	</div>
+
+  <div class = "container" >
+	   <div class="row">
+	   <div class="col-lg-6">
+	       <input type="text" name="email" class="form-control"  placeholder="Enter your User Name">
+	   </div>
+	   </div>
+	  </div> 
+
+</body>
+</html>

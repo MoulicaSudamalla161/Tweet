@@ -1,0 +1,14 @@
+package com.tweetapp.dao;
+
+import com.tweetapp.model.PostTweet;
+
+public class PostDaoSqlImpl {
+
+	
+
+	public void postTweet(PostTweet postTweet) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
